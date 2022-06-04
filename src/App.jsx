@@ -2,6 +2,12 @@ import React from "react";
 
 import "./App.scss";
 
-const App = () => <header>Hello World!</header>;
+import StoreProvider from "./store/StoreProvider";
+
+const App = () => (
+  <StoreProvider>
+    <header>Hello World!</header>;
+  </StoreProvider>
+);
 
 export default App;
