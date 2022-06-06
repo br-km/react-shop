@@ -4,10 +4,14 @@ import "./App.scss";
 
 import StoreProvider from "./store/StoreProvider";
 
-const App = () => (
-  <StoreProvider>
-    <header>Hello World!</header>;
-  </StoreProvider>
-);
+import Header from "./components/Header";
+
+const App = () => {
+  return (
+    <StoreProvider>
+      <Header />
+    </StoreProvider>
+  );
+};
 
 export default App;
