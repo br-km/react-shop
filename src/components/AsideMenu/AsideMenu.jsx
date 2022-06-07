@@ -9,7 +9,7 @@ import UserMenu from "./subcomponents/UserMenu";
 import { default as AsideMenuStyles } from "./AsideMenu.module.scss";
 const style = bemCssModules(AsideMenuStyles);
 
-const ADMIN_TYPE = 1;
+import { ADMIN_TYPE } from "../../helpers/consts";
 
 const AsideMenu = () => {
   const { user } = useContext(StoreContext);

@@ -6,6 +6,7 @@ import { default as AppStyles } from "./App.scss";
 import StoreProvider from "./store/StoreProvider";
 
 import AsideMenu from "./components/AsideMenu/AsideMenu";
+import Content from "./components/Content/Content";
 import Header from "./components/Header";
 
 const style = bemCssModules(AppStyles);
@@ -17,6 +18,7 @@ const App = () => {
       <Router>
         <div className={style()}>
           <AsideMenu />
+          <Content />
         </div>
       </Router>
     </StoreProvider>
