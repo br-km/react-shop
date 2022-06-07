@@ -6,7 +6,6 @@
   display: flex;
   height: 60px;
   background-color: #ddd;
-  border-bottom: 2px solid black;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 
   &__logo-wrapper {
@@ -18,5 +17,22 @@
     margin-left: 20px;
     align-self: center;
     flex-grow: 1;
+  }
+
+  & button {
+    align-self: center;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: rgb(0, 161, 209);
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  & button:hover {
+    opacity: 0.8;
   }
 }

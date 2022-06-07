@@ -6,6 +6,7 @@
     color: #f00;
     font-size: 0.8rem;
     text-align: center;
+    margin: 10px;
   }
 
   &__row {
@@ -14,21 +15,43 @@
 
     & button {
       flex-grow: 1;
+      padding: 10px;
+      background-color: #eee;
+      color: #333;
+      text-transform: uppercase;
+      border: 0;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    & button:hover {
+      opacity: 0.8;
     }
 
     & button:nth-child(1) {
       margin-right: 10px;
+      background-color: rgb(0, 161, 209);
+      color: white;
     }
   }
 
   &__text {
-    margin-right: 4px;
+    margin-right: 10px;
     display: inline-block;
     width: 50px;
+    align-self: center;
+  }
+
+  & label {
+    width: 100%;
+    display: flex;
   }
 
   & input {
     border: 1px solid black;
     border-radius: 4px;
+    padding: 5px 0 5px 10px;
+    flex-grow: 1;
   }
 }
