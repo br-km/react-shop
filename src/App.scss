@@ -4,3 +4,9 @@
   box-sizing: border-box;
   font-family: "open sans", sans-serif;
 }
+
+.content-wrapper {
+  margin-top: 60px;
+  min-height: calc(100vh - 60px);
+  display: flex;
+}
