@@ -11,7 +11,7 @@ const style = bemCssModules(ContentStyles);
 import { ADMIN_TYPE } from "../../helpers/consts";
 
 import Courses from "../Courses/Courses";
-
+import UserCourses from "../UserCourses/UserCourses";
 const Content = () => {
   const { user } = useContext(StoreContext);
 
@@ -24,7 +24,7 @@ const Content = () => {
         {/* <Route exact path="/" element={<Courses />} /> */}
         <Route exact path="/" element={<Courses />} />
         {isUserLogged && (
-          <Route exact path="/my-courses" element={<p>Moje kursy</p>} />
+          <Route exact path="/my-courses" element={<UserCourses />} />
         )}
 
         {isAdmin && (

@@ -6,7 +6,7 @@ import { StoreContext } from "../../store/StoreProvider";
 
 const style = bemCssModules(CoursesStyles);
 
-import Course from "./subcomponents/Course";
+import Course from "../Course/Course";
 
 const Courses = () => {
   const { courses } = useContext(StoreContext);
