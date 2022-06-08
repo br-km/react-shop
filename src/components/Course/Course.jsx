@@ -32,7 +32,6 @@ const Course = ({ authors, id, isUserContext = false, img, price, title }) => {
     }
   };
   const shouldBeBuyButtonVisible = isUserLogged && !isUserContext;
-  console.log(shouldBeBuyButtonVisible);
 
   return (
     <article className={style()}>
