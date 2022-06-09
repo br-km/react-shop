@@ -15,7 +15,7 @@ const Course = ({ authors, id, isUserContext = false, img, price, title }) => {
 
   const navigate = useNavigate();
 
-  const allAuthors = authors.join(",");
+  const allAuthors = authors.join(", ");
 
   const handleOnClick = async () => {
     try {
@@ -38,10 +38,12 @@ const Course = ({ authors, id, isUserContext = false, img, price, title }) => {
       <h3 className={style("title")}>{title}</h3>
       <img src={img} alt={title} className={style("image")} />
       <p className={style("price")}>{`Koszt kursu: ${price}zł`}</p>
-      <p className={style("authors")}>{`Autorzy kursu ${allAuthors}`}</p>
-      {shouldBeBuyButtonVisible && (
-        <button onClick={handleOnClick}>Zakup ten kurs</button>
-      )}
+      <p className={style("authors")}>{`Autorzy kursu: ${allAuthors}`}</p>
+      <div className={style("button-container")}>
+        {shouldBeBuyButtonVisible && (
+          <button onClick={handleOnClick}>Zakup ten kurs</button>
+        )}
+      </div>
     </article>
   );
 };

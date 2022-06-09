@@ -1,24 +1,30 @@
 .aside-menu {
   padding: 15px;
-  min-width: 200px;
-  background-color: #ddd;
+  min-width: 250px;
+  background-color: #eee;
   position: relative;
 
   &__nav-wrapper {
-    position: sticky;
-    top: 80px;
+    position: fixed;
+    top: 128px;
+    width: 235px;
+    height: 770px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    padding: 15px 10px;
   }
 
   &__title {
-    margin-top: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
   }
 
   &__link {
-    margin-top: 10px;
-    padding: 3px 5px;
+    // margin-top: 10px;
+    // padding: 3px 15px;
     color: #000;
-    text-align: center;
-    background-color: lightsalmon;
+    text-decoration: none;
     cursor: pointer;
     list-style: none;
 

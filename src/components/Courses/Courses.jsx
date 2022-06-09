@@ -17,7 +17,7 @@ const Courses = () => {
 
   return (
     <section className={style()}>
-      <h2 className={style("title")}>Dostępne kursy:</h2>
+      <h2 className={style("title")}>Dostępne kursy</h2>
       <ul className={style("list")}>{coursesElements}</ul>
     </section>
   );
