@@ -12,8 +12,10 @@ const AdminMenu = () => {
       <p className={style("title")}>Panel administratora</p>
       <nav>
         <ul>
-          <li className={style("link")}>
-            <Link to="/manage-courses">Zarządzanie kursami</Link>
+          <li className={style("li")}>
+            <Link className={style("link")} to="/manage-courses">
+              Zarządzanie kursami
+            </Link>
           </li>
         </ul>
       </nav>

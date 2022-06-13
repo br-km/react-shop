@@ -1,14 +1,13 @@
 .aside-menu {
-  padding: 15px;
-  min-width: 250px;
-  background-color: #eee;
+  padding: 15px 0;
+  min-width: 300px;
   position: relative;
 
   &__nav-wrapper {
     position: fixed;
     top: 128px;
-    width: 235px;
-    height: 770px;
+    width: 285px;
+    height: 780px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
@@ -18,18 +17,28 @@
   &__title {
     font-size: 1.2rem;
     margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:nth-of-type(2) {
+      margin-top: 10px;
+    }
+  }
+
+  &__li {
+    margin-top: 10px;
+    list-style: none;
+    transition: 0.3s;
+    &:hover {
+      background-color: rgb(0, 161, 209);
+    }
   }
 
   &__link {
-    // margin-top: 10px;
-    // padding: 3px 15px;
-    color: #000;
-    text-decoration: none;
+    color: #333;
     cursor: pointer;
     list-style: none;
-
-    &:hover {
-      background-color: #f00;
-    }
+    text-decoration: none;
+    width: 100%;
   }
 }

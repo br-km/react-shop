@@ -6,8 +6,9 @@
 }
 
 .content-wrapper {
-  margin-top: 60px;
+  margin: 60px auto;
   min-height: calc(100vh - 60px);
   display: flex;
-  background-color: #eee;
+  background-color: #fff;
+  max-width: 1366px;
 }
