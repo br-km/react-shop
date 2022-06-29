@@ -78,6 +78,6 @@ module.exports = {
   devServer: {
     static: "./public",
     hot: true,
-    port: 3000,
+    port: 3001,
   },
 };
